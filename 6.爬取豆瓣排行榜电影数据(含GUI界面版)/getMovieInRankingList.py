@@ -56,7 +56,7 @@ class getMovieInRankingList:
         chrome_options.add_experimental_option("prefs",{"profile.managed_default_content_settings.images": 2})  # 不加载图片,加快访问速度
 
         try:
-            self.browser = webdriver.Chrome(executable_path='/Users/bird/Desktop/chromedriver.exe',chrome_options=chrome_options)  # 设置chromedriver路径
+            self.browser = webdriver.Chrome(executable_path='D:/chromedriver.exe',chrome_options=chrome_options)  # 设置chromedriver路径
             self.wait = WebDriverWait(self.browser, 10)  # 超时时长为10s
         except:
             print("chromedriver.exe出错，请检查是否与你的chrome浏览器版本相匹配\n缺失chromedriver.exe不会导致从排行榜搜索功能失效，但会导致从关键字搜索功能失效")
